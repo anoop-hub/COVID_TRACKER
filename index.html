@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>COVID-19</title>
+</head>
+<body id="bd"  >
+  <!-- <button onclick="dark()">change</button> -->
+    <header>
+         
+        <nav class="navbar " style="background-color: #1a1053;" data-bs-theme="dark">
+            <div class="container-fluid">
+              
+              <a class="navbar-brand" href="index.html" style="font-family: 'Damion', cursive" ><img src="images/icons8-coronavirus-warning-64.png" alt="">COVID-19</a>
+             
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="navbar-item" href="index.html" style="font-family: 'Damion', cursive; color:aliceblue" >COVID-19</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white">About </a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link ">Contact Us></a>
+                  </li>
+
+                </ul>
+               
+              </div>
+              <a  id="time" class="navbar-brand" href="#" style="font-family: 'Damion', cursive" ></a>
+            </div>
+          </nav>
+    </header>
+
+
+
+     <div class="part2">
+        <div class="title">
+        <h1 style="color: rgb(249, 52, 94); text-align: center; 
+        font-family: 'Damion', cursive">💨COVID TRACKER</h1>
+            
+        </div>
+
+      <!-- TOTAL UPDATE -->
+
+      <div class="total" >
+      <div class="row mx-5 " style="text-align: center; justify-content: center; " >
+        <div class="col-6 col-sm-6 my-3"  style="width:300px">
+          <div class="card"  id="cd" style=" border: 4px solid white;border-radius:30px">
+            <div class="card-body" >
+                <h2 class="card-title" >Total Confirmed</h2>
+                <h1 id="1" style="color: rgb(249, 52, 94)"></h1>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 my-3 " style="width:300px" >
+          <div class="card" style=" border: 4px solid whit;border-radius:30px">
+            <div class="card-body">
+               <h2 class="card-title">New Cases</h2>
+               <h1 id="2" style="color: rgb(250, 100, 0)"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row mx-5 " style="justify-content: center; text-align: center;"  >
+
+
+          <div class="col-6 col-sm-6 my-3" style="width:300px">
+            <div class="card" style=" border: 4px solid white;border-radius:30px">
+              <div class="card-body">
+                <h2 class="card-title">Died Today</h2>
+                <h1 id="3" style="color: rgb(98, 54, 255);" ></h1>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 my-3" style="width:300px;">
+            <div class="card" style=" border: 4px solid white;border-radius:30px">
+              <div class="card-body">
+                <h2 class="card-title">Total Deaths</h2>
+                <h1 id="4" style="color: rgb(28, 177, 66);"></h1>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+   
+    <div class="input ">
+        
+      <h2 class="tab my-4" >SEARCH COUNTRY 🔻</h2>
+    <input type="text" id="ty" style="width:300px;margin:auto;text-align: center;" class="form-control my-4" placeholder="Name of country" aria-label="First name">
+    <center><button id="bt" type="button" class="btn btn-danger" style="margin: 30px auto ; width: 100px; height: 50px; "color: rgb(220, 37, 37)">Search</button></center>
+  </div>
+
+    <h1 id="h" style="color: rgb(249, 52, 94); text-align: center; 
+    font-family: 'Damion';border: 2px solid white;
+    width: 450px; margin:auto;background-color: white; border-radius: 20px ;"></h1>
+   <div class="cards">
+
+
+      <div class="row mx-5 " style="text-align: center; justify-content: center; " >
+
+
+        <div class="col-sm-4 mb-3 mb-sm-0 my-3 "style="width:300px;">
+          <div class="card" style=" border: 4px solid white;border-radius:30px">
+            <div class="card-body">
+                <h2 class="card-title">Total Confirmed</h2>
+                <h1 id="p"></h1>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 my-3"  style="width:300px">
+          <div class="card" style=" border: 4px solid white;border-radius:30px">
+            <div class="card-body">
+               <h2 class="card-title">Total Deaths</h2>
+               <h1 id="q"></h1>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+      <div class="row mx-5 " style="text-align: center; justify-content: center; " >
+      
+      
+      
+      
+        <div class="col-6 col-sm-6 my-3"  style="width:300px">
+          <div class="card" style=" border: 4px solid white;border-radius:30px">
+           <div class="card-body">
+               <h2 class="card-title" style="color: rgb(28, 177, 66) ; ">Total Recovered</h2>
+               <h1 id="t"></h1>
+             
+           </div>
+          </div>
+        </div>
+      
+
+
+        <div class="col-6 col-sm-6 my-3"  style="width:300px">
+          <div class="card" style=" border: 4px solid white;border-radius:30px">
+            <div class="card-body">
+                <h2 class="card-title" style="color: rgb(28, 177, 66)">New Recovered</h2>
+                <h1 id="s"></h1>
+              
+            </div>
+            </div>
+         </div>
+  
+
+
+        
+      </div>
+
+
+
+
+
+      <div class="row mx-5 " style="text-align: center; justify-content: center; " >
+        
+        <div class="col-6 col-sm-6 my-3"  style="width:300px">
+          <div class="card" style=" border: 4px solid white;border-radius:30px">
+            <div class="card-body">
+              <h2 class="card-title" style="color:red">New Deaths</h2>
+              <h1 id="r"></h1>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 my-3"  style="width:300px">
+            <div class="card" style=" border: 4px solid white;border-radius:30px">
+              <div class="card-body">
+                <h2 class="card-title" style="color:red">New Cases</h2>
+                <h1 id="u"></h1>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    
+
+        </div>
+  </div>
+
+
+
+
+
+  <h1 class="tab my-4" >STATE WISE REPORT</h1>
+
+
+
+<!-- TABLES  -->
+
+<div class="tables  my-4 " >
+<table class="table my-5  table-bordered" style="border: 2px solid black;margin:auto; color: #1a1053; width: 90%;margin: auto ;" >
+  <thead>
+    <tr>
+      <th scope="col">States</th>
+      <th scope="col">Confirmed</th>
+      <th scope="col">Deaths</th>
+      <th scope="col">Active</th>
+      <th>Recovered</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Andaman & Nicobar</th>
+      <td id="6"></td>
+      <td id="7"></td>
+      <td id="8"></td>
+      <td id="9"></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Andhra Pradesh</th>
+      <td id="10"></td>
+      <td id="11"></td>
+      <td id="12"></td>
+      <td id="13"></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Anurachal Pradesh</th>
+      <td id="14"></td>
+      <td id="15"></td>
+      <td id="16"></td>
+      <td id="17"></td>
+      
+    </tr>
+
+
+    <tr>
+      <th scope="row">Assam</th>
+      <td id="18"></td>
+      <td id="19"></td>
+      <td id="20"></td>
+      <td id="21"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Bihar</th>
+      <td id="22"></td>
+      <td id="23"></td>
+      <td id="24"></td>
+      <td id="25"></td>
+      
+    </tr>
+
+    
+
+    <tr>
+      <th scope="row">Chandigarh</th>
+      <td id="26"></td>
+      <td id="27"></td>
+      <td id="28"></td>
+      <td id="29"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Chattisgarh</th>
+      <td id="30"></td>
+      <td id="31"></td>
+      <td id="32"></td>
+      <td id="33"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Dadra and Nagar Haveli</th>
+      <td id="34"></td>
+      <td id="35"></td>
+      <td id="36"></td>
+      <td id="37"></td>
+      
+    </tr>
+
+
+    <tr>
+      <th scope="row">Delhi</th>
+      <td id="38"></td>
+      <td id="39"></td>
+      <td id="40"></td>
+      <td id="41"></td>
+      
+    </tr>
+
+
+    <tr>
+      <th scope="row">Goa</th>
+      <td id="42"></td>
+      <td id="43"></td>
+      <td id="44"></td>
+      <td id="45"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Gujrat</th>
+      <td id="46"></td>
+      <td id="47"></td>
+      <td id="48"></td>
+      <td id="49"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Haryana</th>
+      <td id="50"></td>
+      <td id="51"></td>
+      <td id="52"></td>
+      <td id="53"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Himachal Pradesh</th>
+      <td id="54"></td>
+      <td id="55"></td>
+      <td id="56"></td>
+      <td id="57"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Jammu & Kashmir</th>
+      <td id="58"></td>
+      <td id="59"></td>
+      <td id="60"></td>
+      <td id="61"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Jharkhand</th>
+      <td id="62"></td>
+      <td id="63"></td>
+      <td id="64"></td>
+      <td id="65"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Karnataka</th>
+      <td id="66"></td>
+      <td id="67"></td>
+      <td id="68"></td>
+      <td id="69"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Kerala</th>
+      <td id="70"></td>
+      <td id="71"></td>
+      <td id="72"></td>
+      <td id="73"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Ladakh</th>
+      <td id="74"></td>
+      <td id="75"></td>
+      <td id="76"></td>
+      <td id="77"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Lakshadweep</th>
+      <td id="78"></td>
+      <td id="79"></td>
+      <td id="80"></td>
+      <td id="81"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Maharashtra</th>
+      <td id="82"></td>
+      <td id="83"></td>
+      <td id="84"></td>
+      <td id="85"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Madhya Pradesh</th>
+      <td id="86"></td>
+      <td id="87"></td>
+      <td id="88"></td>
+      <td id="89"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Manipur</th>
+      <td id="90"></td>
+      <td id="91"></td>
+      <td id="92"></td>
+      <td id="93"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Meghalaya</th>
+      <td id="94"></td>
+      <td id="95"></td>
+      <td id="96"></td>
+      <td id="97"></td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">Mizoram</th>
+      <td id="98"></td>
+      <td id="99"></td>
+      <td id="100"></td>
+      <td id="101"></td>
+      
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FOOTER -->
+
+ <div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">Company Name © 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
